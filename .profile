@@ -113,3 +113,10 @@ alias b='byobu'
 alias pip='pip3'
 
 alias mkubectl='minikube kubectl --'
+
+export KUBECONFIG="$HOME/src/k8s/rke/kube_config_cluster.yml"
+
+export P4PORT=p4p.minervanetworks.com:1777
+
+# arkade
+export PATH=$PATH:$HOME/.arkade/bin
