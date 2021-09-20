@@ -32,9 +32,9 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 # P4V
-# if [ -d "$HOME/.bin/p4v/bin" ] ; then
-#     PATH="$HOME/.bin/p4v/bin:$PATH"
-# fi
+if [ -d "/opt/p4v/bin" ] ; then
+     PATH="/opt/p4v/bin:$PATH"
+fi
 
 # Smartgit
 if [ -d "/opt/smartgit/bin" ] ; then
@@ -94,7 +94,6 @@ alias dokku='$HOME/.dokku/contrib/dokku_client.sh'
 # eval "$(rbenv init -)"
 
 alias b='byobu'
-
 alias k='kubectl'
 
 # kubectl
@@ -108,7 +107,8 @@ alias k='kubectl'
 
 # export DOCKER_HOST=tcp://172.31.50.50:2375
 
-alias pip='pip3'
+
+# alias pip='pip3'
 
 # alias mkubectl='minikube kubectl --'
 
@@ -118,3 +118,16 @@ export P4PORT=p4p.minervanetworks.com:1777
 
 # arkade
 export PATH=$PATH:$HOME/.arkade/bin
+
+# VAGRANT_DEFAULT_PROVIDER="libvirt"
+# alias vagrant='
+#   mkdir -p ~/.vagrant.d/{boxes,data,tmp}; \
+#   docker run -it --rm \
+#   -e LIBVIRT_DEFAULT_URI \
+#   -v /var/run/libvirt/:/var/run/libvirt/ \
+#   -v ~/.vagrant.d:/.vagrant.d \
+#   -v $(pwd):$(pwd) \
+#   -w $(pwd) \
+#   --network host \
+#   vagrantlibvirt/vagrant-libvirt:latest \
+#   vagrant'
