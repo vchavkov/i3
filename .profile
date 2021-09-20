@@ -95,7 +95,7 @@ alias dokku='$HOME/.dokku/contrib/dokku_client.sh'
 
 alias b='byobu'
 
-# alias helm='helm3'
+alias k='kubectl'
 
 # kubectl
 # source <(kubectl completion bash)
@@ -108,13 +108,11 @@ alias b='byobu'
 
 # export DOCKER_HOST=tcp://172.31.50.50:2375
 
-# alias ssh2='tsh ssh'
-
 alias pip='pip3'
 
-alias mkubectl='minikube kubectl --'
+# alias mkubectl='minikube kubectl --'
 
-export KUBECONFIG="$HOME/src/k8s/rke/kube_config_cluster.yml"
+# export KUBECONFIG="$HOME/src/k8s/rke/kube_config_cluster.yml"
 
 export P4PORT=p4p.minervanetworks.com:1777
 
