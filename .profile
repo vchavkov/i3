@@ -100,7 +100,9 @@ alias k='kubectl'
 # source <(kubectl completion bash)
 # alias k='kubectl'
 # complete -F __start_kubectl k
-# export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # k3s
 # export KUBECONFIG="$(k3d get-kubeconfig --name='k3s-default')"

@@ -74,6 +74,8 @@ ZSH_THEME="duellj"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 dotenv
+kubectl
+kubectx
 )
 
 # autoload -U +X compinit && compinit
